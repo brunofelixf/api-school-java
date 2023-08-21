@@ -28,3 +28,18 @@ INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prer
 
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2020-07-14T20:50:07.12345Z', null, true, false);
 INSERT INTO tb_enrollment (user_id, offer_id, enroll_Moment, refund_Moment, available, only_Update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2020-07-14T21:50:07.12345Z', null, true, false);
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 1 do Cap. 1', 1, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES ( 1,'Material 1', 'https://static.vecteezy.com/system/resources/previews/007/559/429/original/wolf-a-wolf-logo-illustration-in-modern-style-free-vector.jpg');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 2 do Cap. 1', 2, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES ( 2,'Material 2', 'https://static.vecteezy.com/system/resources/previews/007/559/429/original/wolf-a-wolf-logo-illustration-in-modern-style-free-vector.jpg');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 3 do Cap. 1', 3, 1);
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES ( 3,'Material 3', 'https://static.vecteezy.com/system/resources/previews/007/559/429/original/wolf-a-wolf-logo-illustration-in-modern-style-free-vector.jpg');
+
+INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 4 do Cap. 1', 4, 1);
+INSERT INTO tb_task (id, description, question_Count, approval_Count, weight, due_Date) VALUES ( 4,'Tarefa do Cap.1', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2020-07-25T21:50:07.12345Z');
+
+INSERT INTO tb_lesson_done (lesson_id, user_id, offer_id) VALUES ( 1, 1, 1);
+INSERT INTO tb_lesson_done (lesson_id, user_id, offer_id) VALUES ( 2, 1, 1);
